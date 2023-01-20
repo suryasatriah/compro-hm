@@ -1,6 +1,6 @@
-import logo from "../assets/logoipsum-288.svg";
+import logo from "../images/logoipsum-288.svg";
 
-const Navbar = () => {
+function Navbar() {
   return (
     <main className="container max-w-5xl mx-auto flex flex-row max-h-20 items-center drop-shadow space-x-96 sm:max-md:space-x-0">
       <div>

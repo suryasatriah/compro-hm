@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 .font-cabin {
   font-family: "Inter", sans-serif;
 }
@@ -20,4 +24,12 @@
     rgba(75, 180, 101, 0.75) 0%,
     rgba(255, 255, 255, 0.5) 100%
   );
+}
+
+.rectangle1 {
+  width: 370px;
+  height: 100px;
+  background: rgba(85, 195, 110, 1);
+  border-radius: 35px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
 }

@@ -1,9 +1,10 @@
-import img1A from "../assets/img1A.webp";
-import img2A from "../assets/img2A.webp";
-import img3A from "../assets/img3A.webp";
-import img4A from "../assets/img4A.webp";
+import img1A from '../images/img1A.webp';
+import img2A from '../images/img2A.webp';
+import img3A from '../images/img3A.webp';
+import img4A from '../images/img4A.webp';
 
-const Fitur = () => {
+function Fitur() {
+  
   return (
     <main className="container mx-auto max-w-5xl">
       <div className="flex flex-col">
