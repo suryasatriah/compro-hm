@@ -1,5 +1,5 @@
-import gambar2 from "../assets/gambar2.jpg";
-import gambaralat1 from "../assets/gambaralat.png";
+import gambar2 from "../images/gambar2.jpg";
+import gambaralat1 from "../images/gambaralat.png";
 
 const Tentang = () => {
   return (

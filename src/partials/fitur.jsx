@@ -1,10 +1,11 @@
-import img1A from '../images/img1A.webp';
-import img2A from '../images/img2A.webp';
-import img3A from '../images/img3A.webp';
-import img4A from '../images/img4A.webp';
+import img1A from "../images/img1A.webp";
+import img2A from "../images/img2A.webp";
+import img3A from "../images/img3A.webp";
+import img4A from "../images/img4A.webp";
+import gambaralat from "../images/gambaralat.png";
+import Fitur1 from "./fitur1";
 
 function Fitur() {
-  
   return (
     <main className="container mx-auto max-w-5xl">
       <div className="flex flex-col">
@@ -79,8 +80,49 @@ function Fitur() {
           </div>
         </div>
       </div>
+
+      <div>
+        <h1 className="font-bold font-cabin text-xl w-2/3 py-10">
+          Apa saja fitur, kelengkapan, dan fasilitas yang akan anda dapatkan
+          ketika menggunakan produk kami?
+        </h1>
+      </div>
+
+      <div className="flex flex-row place-items-center">
+        <div className="w-1/2 p-10 space-y-1">
+          <Fitur1
+            heading1="Alat Bekerja 24/7"
+            heading2="Alat bekerja non-stop 24 jam selama baterai masih tersedia."
+          />
+          <Fitur1
+            heading1="Sensor ON/OFF Otomatis"
+            heading2="Alat dilengkapi sensor LDR yang dapat diatur agar dapat menyalakan lampu otomatis saat gelap."
+          />
+          <Fitur1
+            heading1="Proteksi dari Arus Pendek/Korsleting"
+            heading2="Alat dilengkapi dengan sistem auto cutoff untuk mencegah rusaknya alat akibat korsleting."
+          />
+          <Fitur1
+            heading1="Sistem Manajemen Baterai"
+            heading2="Alat dilengkapi dengan BMS untuk mengatur baterai agar tidak terjadi overcharge."
+          />
+          <Fitur1
+            heading1="Kunci Ganda"
+            heading2="Alat dilengkapi dengan kunci tekan yang dapat ditambah dengan gembok agar aman."
+          />
+        </div>
+
+        <div className="w-1/2 place-items-center p-1">
+          <img src={gambaralat} alt="gambaralat" />
+        </div>
+      </div>
+
+      <div>
+        <p className="font-cabin text-center text-sm px-36 py-10">Perangkap hama Tecnogreen dapat menampilkan data beberapa parameter seperti kapasitas baterai, tegangan baterai, lokasi alat, kamera, dan daya secara real time melalui dashboard IoT*. Selain menampilkan data, pengguna dapat mengontrol alat perangkap dari jarak jauh melalui dashboard ini.</p>
+      </div>
+
     </main>
   );
-};
+}
 
 export default Fitur;
