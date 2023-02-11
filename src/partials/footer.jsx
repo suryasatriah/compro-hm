@@ -3,7 +3,7 @@ import iconwa from "../images/icon-whatsapp.svg";
 import Map from "./map";
 
 function ClickMe() {
-  return window.open("https://wa.me/6281313403220", "_blank");
+  return window.open("https://wa.me/6281228279988", "_blank");
 }
 
 function Footer() {
@@ -56,6 +56,7 @@ function Footer() {
           </p>
         </div>
       </div>
+
     </main>
   );
 }

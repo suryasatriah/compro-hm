@@ -80,7 +80,6 @@ function Fitur() {
           </div>
         </div>
       </div>
-
       <div>
         <h1 className="font-bold font-cabin text-xl w-2/3 py-10">
           Apa saja fitur, kelengkapan, dan fasilitas yang akan anda dapatkan
@@ -91,22 +90,27 @@ function Fitur() {
       <div className="flex flex-row place-items-center">
         <div className="w-1/2 p-10 space-y-1">
           <Fitur1
+            icon="fa fa-clock"
             heading1="Alat Bekerja 24/7"
             heading2="Alat bekerja non-stop 24 jam selama baterai masih tersedia."
           />
           <Fitur1
+            icon="fa fa-power-off"
             heading1="Sensor ON/OFF Otomatis"
             heading2="Alat dilengkapi sensor LDR yang dapat diatur agar dapat menyalakan lampu otomatis saat gelap."
           />
           <Fitur1
+            icon="fa fa-lightbulb"
             heading1="Proteksi dari Arus Pendek/Korsleting"
             heading2="Alat dilengkapi dengan sistem auto cutoff untuk mencegah rusaknya alat akibat korsleting."
           />
           <Fitur1
+            icon="fa fa-battery-half"
             heading1="Sistem Manajemen Baterai"
             heading2="Alat dilengkapi dengan BMS untuk mengatur baterai agar tidak terjadi overcharge."
           />
           <Fitur1
+            icon="fa fa-lock"
             heading1="Kunci Ganda"
             heading2="Alat dilengkapi dengan kunci tekan yang dapat ditambah dengan gembok agar aman."
           />
@@ -118,9 +122,14 @@ function Fitur() {
       </div>
 
       <div>
-        <p className="font-cabin text-center text-sm px-36 py-10">Perangkap hama Tecnogreen dapat menampilkan data beberapa parameter seperti kapasitas baterai, tegangan baterai, lokasi alat, kamera, dan daya secara real time melalui dashboard IoT*. Selain menampilkan data, pengguna dapat mengontrol alat perangkap dari jarak jauh melalui dashboard ini.</p>
+        <p className="font-cabin text-center text-sm px-36 py-10">
+          Perangkap hama Tecnogreen dapat menampilkan data beberapa parameter
+          seperti kapasitas baterai, tegangan baterai, lokasi alat, kamera, dan
+          daya secara real time melalui dashboard IoT*. Selain menampilkan data,
+          pengguna dapat mengontrol alat perangkap dari jarak jauh melalui
+          dashboard ini.
+        </p>
       </div>
-
     </main>
   );
 }
