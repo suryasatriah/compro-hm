@@ -2,134 +2,144 @@ import img1A from "../images/img1A.webp";
 import img2A from "../images/img2A.webp";
 import img3A from "../images/img3A.webp";
 import img4A from "../images/img4A.webp";
-import gambaralat from "../images/gambaralat.png";
-import Fitur1 from "./fitur1";
+import img5A from "../images/ilustrasi.JPG";
+
+
+function Kelengkapan(props) {
+  const heading1 = props.heading1;
+  const heading2 = props.heading2;
+  const icon = props.icon;
+
+  return (
+    <>
+      <div className="flex flex-row space-x-2 container items-center">
+        <div className="dot items-center flex-none px-6 py-6">
+          <i
+            class={icon}
+            style={{ fontSize: "70px", color: "green", textAlign: "center" }}
+          />
+        </div>
+        <div className="flex flex-col font-cabin">
+          <h1 className="font-bold">{heading1}</h1>
+          <p className="text-sm">{heading2}</p>
+        </div>
+      </div>
+    </>
+  );
+}
+
+function Keunggulan(props) {
+  const title = props.title;
+  const content = props.content;
+  const image = props.image;
+  let flex_reverse = props.flex_reverse;
+
+  if (flex_reverse === true) {
+    flex_reverse = "flex-row-reverse";
+  }
+
+  return (
+    <div
+      className={`container align-middle mx-auto flex ${flex_reverse} sm:max-md:flex-col`}
+    >
+      <div className="w-3/5 sm:max-md:w-auto">
+        <img alt="illustration_image" src={image} />
+      </div>
+      <div className="bg-fitur1  w-2/5 sm:max-md:w-auto font-cabin text-left sm:max-md:text-center p-20">
+        <h1 className="font-bold align-middle text-base mb-3">{title}</h1>
+        <p className="align-middle text-xs">{content}</p>
+      </div>
+    </div>
+  );
+}
 
 function Fitur() {
   return (
-    <main className="container mx-auto max-w-5xl">
-      <div className="flex flex-col">
-        <div className="font-cabin font-semibold text-center place-content-center p-20">
-          {/* title */}
-          <h2 className="text-lg">HOW IT WORKS</h2>
-          <h1 className="text-2xl">Perlindungan untuk tanaman kebun anda!</h1>
-        </div>
-        <div className="h-auto flex flex-row sm:max-md:flex-col">
-          {/* produk fitur 1 */}
-          <div className="w-3/5 sm:max-md:w-auto">
-            <img alt="img1A" src={img1A} />
-          </div>
-          <div className="bg-fitur1 w-2/5 sm:max-md:w-auto font-cabin text-left sm:max-md:text-center p-20">
-            <h1 className="font-bold text-base mb-3">
-              MEMERANGKAP BERBAGAI JENIS HAMA TUMBUHAN
-            </h1>
-            <p className="text-xs">
-              Produk kami dapat menarik serangga agar datang dan terperangkap
-              menggunakan teknologi lampu perangkap(light trap), atraktan
-              perangkap(attractant trap), lem perangkap(sticky trap) dan
-              perangkap listrik(electrical trap).
-            </p>
-          </div>
-        </div>
-        <div className="h-auto flex flex-row sm:max-md:flex-col-reverse ">
-          {/* produk fitur 2 */}
-          <div className="bg-fitur1 w-2/5 sm:max-md:w-auto font-cabin text-left sm:max-md:text-center p-20">
-            <h1 className="font-bold text-base mb-3">
-              DAPAT BEROPERASI DI TEMPAT TANPA ALIRAN LISTRIK
-            </h1>
-            <p className="text-xs">
-              Produk kami dilengkapi dengan solar panel berkapasitas 80 Wp dan
-              baterai berkapasitas 120 Ah sehingga dapt digunakan di tempat yang
-              tidak tersedia aliran listrik PLN(off-grid).
-            </p>
-          </div>
-          <div className="w-3/5 sm:max-md:w-auto">
-            <img alt="img2A" src={img2A} />
-          </div>
-        </div>
-        <div className="h-auto flex flex-row sm:max-md:flex-col">
-          {/* produk fitur 3 */}
-          <div className="w-3/5 sm:max-md:w-auto">
-            <img alt="img3A" src={img3A} />
-          </div>
-          <div className="bg-fitur1 w-2/5 sm:max-md:w-auto font-cabin text-left sm:max-md:text-center p-20">
-            <h1 className="font-bold text-base mb-3">
-              BERFUNGSI SEBAGAI ALAT PERANGKAP DAN MONITORING(MULTI-TRAP)
-            </h1>
-            <p className="text-xs">
-              Dibekali dengan teknologi internet of things(IoT), produk kami
-              dapat memonitor keadaan sekitar alat dan memberikan informasi yang
-              dapat diakses melalui website dashboard.
-            </p>
-          </div>
-        </div>
-        <div className="h-auto flex flex-row sm:max-md:flex-col-reverse">
-          {/* produk fitur 4 */}
-          <div className="bg-fitur1 w-2/5 sm:max-md:w-auto font-cabin text-left sm:max-md:text-center p-20">
-            <h1 className="font-bold text-base mb-3">
-              KOKOH, AWET, RAMAH LINGKUNGAN
-            </h1>
-            <p className="text-xs">
-              Strukturs produk kami disusun dengan material berkualitas dan
-              tentunya awet dan tahan di berbagai jenis lahan kawasan pertanian
-              seperti persawahan, kws. holtikultura, dan area kebun.
-            </p>
-          </div>
-          <div className="w-3/5 sm:max-md:w-auto">
-            <img alt="img4A" src={img4A} />
-          </div>
-        </div>
-      </div>
-      <div>
-        <h1 className="font-bold font-cabin text-xl w-2/3 py-10">
-          Apa saja fitur, kelengkapan, dan fasilitas yang akan anda dapatkan
-          ketika menggunakan produk kami?
-        </h1>
+    <main className="container max-w-screen-2xl mx-auto flex flex-col">
+      <div className="font-cabin font-semibold text-center p-20 bg-green-50">
+        <h2 className="text-lg pb-1">HOW IT WORKS</h2>
+        <h1 className="text-2xl">Perlindungan untuk tanaman kebun anda!</h1>
       </div>
 
-      <div className="flex flex-row place-items-center">
-        <div className="w-1/2 p-10 space-y-1">
-          <Fitur1
+      <div>
+        <Keunggulan
+          title="MEMERANGKAP BERBAGAI JENIS HAMA TUMBUHAN"
+          content="Produk kami dapat menarik serangga agar datang dan terperangkap menggunakan teknologi lampu perangkap(light trap), atraktan perangkap(attractant trap), lem perangkap(sticky trap) dan perangkap listrik(electrical trap)."
+          image={img1A}
+        />
+        <Keunggulan
+          title="DAPAT BEROPERASI DI TEMPAT TANPA ALIRAN LISTRIK"
+          content="Produk kami dilengkapi dengan solar panel berkapasitas 80 Wp dan
+            baterai berkapasitas 120 Ah sehingga dapt digunakan di tempat yang
+            tidak tersedia aliran listrik PLN(off-grid)."
+          image={img2A}
+          flex_reverse={true}
+        />
+        <Keunggulan
+          title="BERFUNGSI SEBAGAI ALAT PERANGKAP DAN MONITORING(MULTI-TRAP)"
+          content="Dibekali dengan teknologi internet of things(IoT), produk kami
+            dapat memonitor keadaan sekitar alat dan memberikan informasi yang
+            dapat diakses melalui website dashboard."
+          image={img3A}
+        />
+        <Keunggulan
+          title="KOKOH, AWET, RAMAH LINGKUNGAN"
+          content="Struktur produk kami disusun dengan material berkualitas dan
+            tentunya awet dan tahan di berbagai jenis lahan kawasan pertanian
+            seperti persawahan, kws. holtikultura, dan area kebun."
+          image={img4A}
+          flex_reverse={true}
+        />
+      </div>
+
+      <h1 className="font-cabin font-bold text-xl w-2/3 px-5 py-10">
+        Apa saja fitur, kelengkapan, dan fasilitas yang akan anda dapatkan
+        ketika menggunakan produk kami?
+      </h1>
+
+      <div className="flex flex-row self-stretch bg-green-200">
+
+        <div className="w-1/2 flex-col self-center space-y-5 p-5">
+          <Kelengkapan
             icon="fa fa-clock"
             heading1="Alat Bekerja 24/7"
             heading2="Alat bekerja non-stop 24 jam selama baterai masih tersedia."
           />
-          <Fitur1
+          <Kelengkapan
             icon="fa fa-power-off"
             heading1="Sensor ON/OFF Otomatis"
             heading2="Alat dilengkapi sensor LDR yang dapat diatur agar dapat menyalakan lampu otomatis saat gelap."
           />
-          <Fitur1
+          <Kelengkapan
             icon="fa fa-lightbulb"
             heading1="Proteksi dari Arus Pendek/Korsleting"
             heading2="Alat dilengkapi dengan sistem auto cutoff untuk mencegah rusaknya alat akibat korsleting."
           />
-          <Fitur1
+          <Kelengkapan
             icon="fa fa-battery-half"
             heading1="Sistem Manajemen Baterai"
             heading2="Alat dilengkapi dengan BMS untuk mengatur baterai agar tidak terjadi overcharge."
           />
-          <Fitur1
+          <Kelengkapan
             icon="fa fa-lock"
             heading1="Kunci Ganda"
             heading2="Alat dilengkapi dengan kunci tekan yang dapat ditambah dengan gembok agar aman."
           />
         </div>
+        
+        <img alt="ilustrasi alat" src={img5A} className="w-1/2 self-center"/>
 
-        <div className="w-1/2 place-items-center p-1">
-          <img src={gambaralat} alt="gambaralat" />
-        </div>
       </div>
 
-      <div>
-        <p className="font-cabin text-center text-sm px-36 py-10">
-          Perangkap hama Tecnogreen dapat menampilkan data beberapa parameter
-          seperti kapasitas baterai, tegangan baterai, lokasi alat, kamera, dan
-          daya secara real time melalui dashboard IoT*. Selain menampilkan data,
-          pengguna dapat mengontrol alat perangkap dari jarak jauh melalui
-          dashboard ini.
-        </p>
-      </div>
+      <p className="font-cabin text-center text-sm px-36 py-10">
+        Perangkap hama Tecnogreen dapat menampilkan data beberapa parameter
+        seperti kapasitas baterai, tegangan baterai, lokasi alat, kamera, dan
+        daya secara real time melalui dashboard IoT*. Selain menampilkan data,
+        pengguna dapat mengontrol alat perangkap dari jarak jauh melalui
+        dashboard ini.
+      </p>
+
+
     </main>
   );
 }

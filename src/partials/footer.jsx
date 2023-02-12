@@ -8,8 +8,8 @@ function ClickMe() {
 
 function Footer() {
   return (
-    <main className="container max-w-5xl mx-auto flex flex-col">
-      <div>
+    <main>
+      <div className="container max-w-screen-2xl mx-auto flex flex-col">
         <div>
           {/* hubungi kami */}
           <button onClick={ClickMe}>
@@ -26,10 +26,10 @@ function Footer() {
         </div>
         <img alt="gambar3" src={gambar3} />
       </div>
+
       <div className="bg-green-800">
-        {/* footer */}
-        <div className="flex flex-row text-xs sm:max-md:flex-col font-cabin text-white">
-          <div className="w-1/4 sm:max-md:w-auto p-10">
+        <div className="container mx-auto flex flex-row sm:max-md:flex-col font-cabin text-white">
+          <div className="w-1/4 sm:max-md:w-auto px-3 py-10">
             <h1 className="font-bold pb-5">ALAMAT</h1>
             <p>
               18 Office Park, lt. 21
@@ -40,10 +40,13 @@ function Footer() {
               DKI Jakarta 12520
             </p>
           </div>
-          <div className="w-1/4 sm:max-md:w-auto p-10">
+          <div className="w-1/4 py-10 px-3 sm:max-md:w-auto">
             <h1 className="font-bold pb-5">KONTAK</h1>
-            <p>Telepon : 081313403220</p>
-            <p>Email : halimmakmurjayaabadi@gmail.com</p>
+            <p>
+              Telepon : <br />
+              0812-2827-9988
+            </p>
+            <p>E-mail : halimmakmurjayaabadi@gmail.com</p>
           </div>
           <div className="w-2/4 sm:max-md:w-auto py-10 pl-10">
             <h1 className="font-bold pb-5">LOKASI</h1>
@@ -56,7 +59,6 @@ function Footer() {
           </p>
         </div>
       </div>
-
     </main>
   );
 }

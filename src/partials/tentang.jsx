@@ -1,12 +1,14 @@
 import gambar2 from "../images/gambar2.jpg";
 import gambaralat1 from "../images/gambaralat.png";
 
-const Tentang = () => {
+function Tentang() {
   return (
-    <main className="container max-w-5xl mx-auto flex flex-col">
-      <div className="flex flex-row place-items-center bg-gradient-to-r from-green-500 to-white">
-        {/* tentang kami */}
-        <div className="font-cabin space-y-5 ml-10 max-w-md sm:max-md:absolute sm:max-md:text-white">
+    <main className="flex flex-col">
+
+
+      <div className="max-w-screen-2xl mx-auto place-items-center flex flex-row bg-gradient-to-r from-green-500 to-white">
+        
+        <div className="container font-cabin pl-10 w-3/5 sm:max-md:absolute sm:max-md:text-white">
           <h1 className="font-bold text-xl">TENTANG KAMI</h1>
           <p className="text-sm">
             <b>Tecnogreen</b> merupakan penyedia produk dan jasa keperluan
@@ -15,11 +17,13 @@ const Tentang = () => {
             terdepan untuk solusi pertanian dan perkebunan.
           </p>
         </div>
-        <div className="w-fit h-fit">
-          <img alt="illustration2" src={gambar2} />
-        </div>
+
+        <img className="w-2/5 self-stretch flex" alt="illustration2" src={gambar2} />
+        
       </div>
-      <div className="max-w-5xl mx-auto flex flex-row sm:max-md:flex-col place-items-center">
+
+
+      <div className="max-w-none mx-auto flex flex-row sm:max-md:flex-col place-items-center">
         {/* produk */}
         <div className="w-1/3 sm:max-md:w-auto px-20 py-10 sm:max-md:p-20">
           <img alt="gambaralat1" src={gambaralat1} />

@@ -8,7 +8,7 @@ import { React } from "react";
 
 function App() {
   return (
-    <main className="bg-white">
+    <main className="bg-white max-w-screen">
       <Navbar />
       <Hero />
       <Tentang />
