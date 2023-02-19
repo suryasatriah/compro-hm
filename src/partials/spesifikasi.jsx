@@ -15,7 +15,7 @@ function SpecificationItems(props) {
   );
 }
 
-function Spesifikasi() {
+function SpesifikasiProduk(ref) {
   return (
     <main className="container max-w-screen-2xl mx-auto flex flex-col">
       <h1 className="py-10 text-center text-2xl font-bold font-cabin">SPESIFIKASI</h1>
@@ -72,4 +72,4 @@ function Spesifikasi() {
   );
 }
 
-export default Spesifikasi;
+export default SpesifikasiProduk;

@@ -2,15 +2,14 @@ import gambar2 from "../images/gambar2.jpg";
 import gambaralat1 from "../images/gambaralat.png";
 
 //Bagian tentang kami
-function Tentang() {
+
+function TentangKami() {
   return (
-    <main className="flex flex-col">
-
-
-      <div className="max-w-screen-2xl mx-auto place-items-center flex flex-row bg-gradient-to-r from-green-500 to-white">
+    <main className="max-w-screen-2xl mx-auto flex flex-col">
+      <div className="place-items-center mx-auto flex flex-row bg-gradient-to-r from-green-500 to-white">
         
-        <div className="container font-cabin pl-10 w-3/5 sm:max-md:absolute sm:max-md:text-white">
-          <h1 className="font-bold text-xl">TENTANG KAMI</h1>
+        <div className="font-cabin w-2/3 px-5 sm:max-md:absolute sm:max-md:text-white">
+          <h1 className="font-bold text-xl pb-5">TENTANG KAMI</h1>
           <p className="text-sm">
             <b>Tecnogreen</b> merupakan penyedia produk dan jasa keperluan
             pertanian yang dikelola oleh PT. Halim Makmur Jayaabadi. Tecnogreen
@@ -18,14 +17,14 @@ function Tentang() {
             terdepan untuk solusi pertanian dan perkebunan.
           </p>
         </div>
-
-        <img className="w-2/5 self-stretch flex" alt="illustration2" src={gambar2} />
         
+        <div className="w-1/3">
+          <img alt="illustration2" src={gambar2} />
+        </div>
+
       </div>
 
-
       <div className="mx-auto flex flex-row sm:max-md:flex-col place-items-center">
-
         <div className="w-2/5 sm:max-md:w-auto px-20 py-10 sm:max-md:p-20">
           <img alt="gambaralat1" src={gambaralat1} />
         </div>
@@ -43,6 +42,6 @@ function Tentang() {
       </div>
     </main>
   );
-};
+}
 
-export default Tentang;
+export default TentangKami;

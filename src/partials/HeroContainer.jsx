@@ -1,6 +1,6 @@
 import heroimg from "../images/hero.png";
 
-function Hero() {
+function HeroContainer() {
   return (
     <main>
       <div className="container max-w-screen-2xl mx-auto max-h-auto items-center">
@@ -15,4 +15,4 @@ function Hero() {
   );
 }
 
-export default Hero;
+export default HeroContainer;
