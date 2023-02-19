@@ -3,8 +3,10 @@ import img2A from "../images/img2A.webp";
 import img3A from "../images/img3A.webp";
 import img4A from "../images/img4A.webp";
 import img5A from "../images/ilustrasi.JPG";
+import dashboard from "../images/dashboard.png";
 
 
+//fungsi untuk membuat styling dan formatting bagian "How it Works"
 function Kelengkapan(props) {
   const heading1 = props.heading1;
   const heading2 = props.heading2;
@@ -13,14 +15,14 @@ function Kelengkapan(props) {
   return (
     <>
       <div className="flex flex-row space-x-2 container items-center">
-        <div className="dot items-center flex-none px-6 py-6">
+        <div className="dot flex-none px-6 py-6">
           <i
             class={icon}
-            style={{ fontSize: "70px", color: "green", textAlign: "center" }}
+            style={{ fontSize: "70px", color: "green", placeContent: "center"}}
           />
         </div>
         <div className="flex flex-col font-cabin">
-          <h1 className="font-bold">{heading1}</h1>
+          <h1 className="font-bold pb-2">{heading1}</h1>
           <p className="text-sm">{heading2}</p>
         </div>
       </div>
@@ -28,6 +30,8 @@ function Kelengkapan(props) {
   );
 }
 
+
+//fungsi untuk membuat styling dan formatting bagian "Apa saja yang anda dapatkan ketika..."
 function Keunggulan(props) {
   const title = props.title;
   const content = props.content;
@@ -45,7 +49,7 @@ function Keunggulan(props) {
       <div className="w-3/5 sm:max-md:w-auto">
         <img alt="illustration_image" src={image} />
       </div>
-      <div className="bg-fitur1  w-2/5 sm:max-md:w-auto font-cabin text-left sm:max-md:text-center p-20">
+      <div className="bg-fitur1  w-2/5 sm:max-md:w-auto font-cabin text-left sm:max-md:text-center p-32">
         <h1 className="font-bold align-middle text-base mb-3">{title}</h1>
         <p className="align-middle text-xs">{content}</p>
       </div>
@@ -53,6 +57,8 @@ function Keunggulan(props) {
   );
 }
 
+
+//main function untuk bagian fitur
 function Fitur() {
   return (
     <main className="container max-w-screen-2xl mx-auto flex flex-col">
@@ -98,7 +104,6 @@ function Fitur() {
       </h1>
 
       <div className="flex flex-row self-stretch bg-green-200">
-
         <div className="w-1/2 flex-col self-center space-y-5 p-5">
           <Kelengkapan
             icon="fa fa-clock"
@@ -126,20 +131,21 @@ function Fitur() {
             heading2="Alat dilengkapi dengan kunci tekan yang dapat ditambah dengan gembok agar aman."
           />
         </div>
-        
-        <img alt="ilustrasi alat" src={img5A} className="w-1/2 self-center"/>
 
+        <img alt="ilustrasi alat" src={img5A} className="w-1/2 self-center" />
       </div>
 
-      <p className="font-cabin text-center text-sm px-36 py-10">
-        Perangkap hama Tecnogreen dapat menampilkan data beberapa parameter
-        seperti kapasitas baterai, tegangan baterai, lokasi alat, kamera, dan
-        daya secara real time melalui dashboard IoT*. Selain menampilkan data,
-        pengguna dapat mengontrol alat perangkap dari jarak jauh melalui
-        dashboard ini.
-      </p>
-
-
+      <div>
+        <p className="font-cabin text-center text-sm px-36 py-10">
+          Perangkap hama Tecnogreen dapat menampilkan data beberapa parameter
+          seperti kapasitas baterai, tegangan baterai, lokasi alat, kamera, dan
+          daya secara real time melalui dashboard IoT*. Selain menampilkan data,
+          pengguna dapat mengontrol alat perangkap dari jarak jauh melalui
+          dashboard ini.
+        </p>
+      </div>
+      <img alt="dashboard" src={dashboard} className="items-center px-5
+      "/>
     </main>
   );
 }

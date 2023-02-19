@@ -4,15 +4,17 @@ import Hero from "./partials/hero";
 import Navbar from "./partials/navbar";
 import Tentang from "./partials/tentang";
 import { React } from "react";
+import Spesifikasi from "./partials/spesifikasi";
 
 
 function App() {
   return (
-    <main className="bg-white max-w-screen">
+    <main>
       <Navbar />
       <Hero />
       <Tentang />
       <Fitur />
+      <Spesifikasi/>
       <Footer />
     </main>
   );
