@@ -5,7 +5,7 @@ function HeroContainer() {
     <main>
       <div className="container max-w-screen-2xl mx-auto max-h-auto items-center">
         <div className="absolute left-0 right-0 pt-10 mx-auto w-max">
-          <h1 className="font-cabin font-bold text-white align-center text-4xl">
+          <h1 className="font-cabin font-bold text-white align-center text-4xl sm:max-md:text-lg">
             PERANGKAP HAMA TERPADU
           </h1>
         </div>
