@@ -17,7 +17,7 @@ function SpecificationItems(props) {
 
 function SpesifikasiProduk(ref) {
   return (
-    <main className="container max-w-screen-2xl mx-auto flex flex-col">
+    <main className="hidden //flex container max-w-screen-2xl mx-auto flex-col">
       <h1 className="py-10 text-center text-2xl font-bold font-cabin">SPESIFIKASI</h1>
       <div className="flex place-content-center content-between space-x-24 pb-10">
         <SpecificationItems heading="Dimensi" subheading="600x600x1000 mm" />

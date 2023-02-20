@@ -5,7 +5,6 @@ import img4A from "../images/img4A.webp";
 import img5A from "../images/ilustrasi.JPG";
 import dashboard from "../images/dashboard.png";
 
-
 //fungsi untuk membuat styling dan formatting bagian "How it Works"
 function Kelengkapan(props) {
   const heading1 = props.heading1;
@@ -18,7 +17,7 @@ function Kelengkapan(props) {
         <div className="dot flex-none px-6 py-6">
           <i
             class={icon}
-            style={{ fontSize: "70px", color: "green", placeContent: "center"}}
+            style={{ fontSize: "70px", color: "green", placeContent: "center" }}
           />
         </div>
         <div className="flex flex-col font-cabin">
@@ -29,7 +28,6 @@ function Kelengkapan(props) {
     </>
   );
 }
-
 
 //fungsi untuk membuat styling dan formatting bagian "Apa saja yang anda dapatkan ketika..."
 function Keunggulan(props) {
@@ -44,19 +42,21 @@ function Keunggulan(props) {
 
   return (
     <div
-      className={`container align-middle mx-auto flex ${flex_reverse} sm:max-md:flex-col`}
+      className={`align-middle mx-auto flex ${flex_reverse} sm:max-md:flex-col`}
     >
       <div className="w-3/5 sm:max-md:w-auto">
         <img alt="illustration_image" src={image} />
       </div>
-      <div className="bg-fitur1  w-2/5 sm:max-md:w-auto font-cabin text-left sm:max-md:text-center p-32">
-        <h1 className="font-bold align-middle text-base mb-3">{title}</h1>
+      <div
+        className="bg-fitur1 w-2/5 p-32 font-cabin text-left 
+      sm:max-md:text-center sm:max-md:py-10 sm:max-md:px-auto sm:max-md:w-auto"
+      >
+        <h1 className="font-bold align-middle text-base sm:max-md:pb-5">{title}</h1>
         <p className="align-middle text-xs">{content}</p>
       </div>
     </div>
   );
 }
-
 
 //main function untuk bagian fitur
 function Fitur() {
@@ -98,12 +98,12 @@ function Fitur() {
         />
       </div>
 
-      <h1 className="font-cabin font-bold text-xl w-2/3 px-5 py-10">
+      <h1 className="hidden font-cabin font-bold text-xl w-2/3 px-5 py-10">
         Apa saja fitur, kelengkapan, dan fasilitas yang akan anda dapatkan
         ketika menggunakan produk kami?
       </h1>
 
-      <div className="flex flex-row self-stretch bg-green-200">
+      <div className="hidden //flex flex-row self-stretch bg-green-200">
         <div className="w-1/2 flex-col self-center space-y-5 p-5">
           <Kelengkapan
             icon="fa fa-clock"
@@ -135,7 +135,7 @@ function Fitur() {
         <img alt="ilustrasi alat" src={img5A} className="w-1/2 self-center" />
       </div>
 
-      <div>
+      <div className="hidden">
         <p className="font-cabin text-center text-sm px-36 py-10">
           Perangkap hama Tecnogreen dapat menampilkan data beberapa parameter
           seperti kapasitas baterai, tegangan baterai, lokasi alat, kamera, dan
@@ -143,9 +143,8 @@ function Fitur() {
           pengguna dapat mengontrol alat perangkap dari jarak jauh melalui
           dashboard ini.
         </p>
+        <img alt="dashboard" src={dashboard} className="items-center px-5" />
       </div>
-      <img alt="dashboard" src={dashboard} className="items-center px-5
-      "/>
     </main>
   );
 }

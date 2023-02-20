@@ -18,13 +18,13 @@ function TentangKami() {
           </p>
         </div>
         
-        <div className="w-1/3">
+        <div className="w-1/3 sm:max-md:w-auto">
           <img alt="illustration2" src={gambar2} />
         </div>
 
       </div>
 
-      <div className="mx-auto flex flex-row sm:max-md:flex-col place-items-center">
+      <div className="hidden mx-auto //flex flex-row sm:max-md:flex-col place-items-center">
         <div className="w-2/5 sm:max-md:w-auto px-20 py-10 sm:max-md:p-20">
           <img alt="gambaralat1" src={gambaralat1} />
         </div>

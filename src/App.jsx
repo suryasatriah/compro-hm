@@ -2,10 +2,10 @@ import React from "react";
 import { useRef } from "react";
 import HeroContainer from "./partials/HeroContainer";
 import Kontak from "./partials/kontak";
-import Fitur from "./partials/fitur";
+import Fitur from "./partials/FiturAlat";
 import logo from "./images/logo.png";
 import Map from "./partials/map";
-import SpesifikasiProduk from "./partials/spesifikasi";
+import SpesifikasiProduk from "./partials/SpesifikasiProduk";
 import TentangKami from "./partials/TentangKami";
 
 function App() {
@@ -39,7 +39,7 @@ function App() {
         <HeroContainer />
         <SectionTentang ref={sectionRefTentang} />
         <SectionProduk ref={sectionRefProduk} />
-        <SpesifikasiProduk />
+        <SpesifikasiProduk/>
         <SectionKontak ref={sectionRefKontak} />
       </body>
       <footer className="container mx-auto max-w-screen-2xl">
