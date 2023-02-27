@@ -7,21 +7,20 @@ function TentangKami() {
   return (
     <main className="max-w-screen-2xl mx-auto flex flex-col">
       <div className="place-items-center mx-auto flex flex-row bg-gradient-to-r from-green-500 to-white">
-        
         <div className="font-cabin w-2/3 px-5 sm:max-md:absolute sm:max-md:text-white">
-          <h1 className="font-bold text-xl pb-5">TENTANG KAMI</h1>
+          <h1 className="font-bold text-xl pb-5">ABOUT US</h1>
           <p className="text-sm">
-            <b>Tecnogreen</b> merupakan penyedia produk dan jasa keperluan
-            pertanian yang dikelola oleh PT. Halim Makmur Jayaabadi. Tecnogreen
-            menerapkan teknologi yang ramah lingkungan dan mengusung inovasi
-            terdepan untuk solusi pertanian dan perkebunan.
+            <b>Tecnogreen</b> is a trademark of PT. Halim Makmur Jayaabadi, a company
+            that specializes in manufacturing agricultural equipment. We
+            understand that to improve the quality of agricultural products,
+            effective supporting equipment is essential. Therefore, we offer
+            equipment that can help achieve the best production results.
           </p>
         </div>
-        
+
         <div className="w-1/3 sm:max-md:w-auto">
           <img alt="illustration2" src={gambar2} />
         </div>
-
       </div>
 
       <div className="hidden mx-auto //flex flex-row sm:max-md:flex-col place-items-center">

@@ -27,7 +27,7 @@ function App() {
     <main>
       <nav className="container max-w-screen-2xl mx-auto">
         <img className="max-h-16 px-10" alt="logo" src={logo} />
-        <ul>
+        <ul className="sm:max-md:hidden">
           <li className="space-x-5">
             <button onClick={handleScrollTentang}>Tentang</button>
             <button onClick={handleScrollProduk}>Produk</button>

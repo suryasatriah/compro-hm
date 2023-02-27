@@ -51,7 +51,9 @@ function Keunggulan(props) {
         className="bg-fitur1 w-2/5 p-32 font-cabin text-left 
       sm:max-md:text-center sm:max-md:py-10 sm:max-md:px-auto sm:max-md:w-auto"
       >
-        <h1 className="font-bold align-middle text-base sm:max-md:pb-5">{title}</h1>
+        <h1 className="font-bold align-middle text-base pb-5 sm:max-md:pb-5">
+          {title}
+        </h1>
         <p className="align-middle text-xs">{content}</p>
       </div>
     </div>
@@ -69,27 +71,28 @@ function Fitur() {
 
       <div>
         <Keunggulan
-          title="MEMERANGKAP BERBAGAI JENIS HAMA TUMBUHAN"
-          content="Produk kami dapat menarik serangga agar datang dan terperangkap menggunakan teknologi lampu perangkap(light trap), atraktan perangkap(attractant trap), lem perangkap(sticky trap) dan perangkap listrik(electrical trap)."
+          title="PENGENDALIAN HAMA TERPADU"
+          content="Produk kami dapat menarik serangga agar datang dan terperangkap menggunakan teknologi ramah lingkungan untuk mengendalikan hama. Pengendalian Hama Terpadu (PHT)
+          dapat menjadi solusi untuk mengurangi
+          dampaknya dan menjaga hasil produksi
+          yang optimal."
           image={img1A}
         />
         <Keunggulan
-          title="DAPAT BEROPERASI DI TEMPAT TANPA ALIRAN LISTRIK"
-          content="Produk kami dilengkapi dengan solar panel berkapasitas 80 Wp dan
-            baterai berkapasitas 120 Ah sehingga dapt digunakan di tempat yang
-            tidak tersedia aliran listrik PLN(off-grid)."
+          title="RAMAH LINGKUNGAN DENGAN ENERGI TERBARUKAN"
+          content="Tecnogreen mengedepankan produk dan sistem pertanian yang berbasis energi terbarukan dan ramah lingkungan. Pertanian yang ramah lingkungan dan
+          berkelanjutan menjadi kunci utama
+          dalam mitigasi perubahan iklim."
           image={img2A}
           flex_reverse={true}
         />
         <Keunggulan
-          title="BERFUNGSI SEBAGAI ALAT PERANGKAP DAN MONITORING(MULTI-TRAP)"
-          content="Dibekali dengan teknologi internet of things(IoT), produk kami
-            dapat memonitor keadaan sekitar alat dan memberikan informasi yang
-            dapat diakses melalui website dashboard."
+          title="PEMANFAATAN TEKNOLOGI TERKINI"
+          content="Produk kami dibekali dengan teknologi internet of things(IoT) sehingga dapat memonitor keadaan sekitar alat dan memberikan informasi yang dapat diakses melalui website dashboard."
           image={img3A}
         />
         <Keunggulan
-          title="KOKOH, AWET, RAMAH LINGKUNGAN"
+          title="KOKOH, AWET, DAPAT DIANDALKAN"
           content="Struktur produk kami disusun dengan material berkualitas dan
             tentunya awet dan tahan di berbagai jenis lahan kawasan pertanian
             seperti persawahan, kws. holtikultura, dan area kebun."
