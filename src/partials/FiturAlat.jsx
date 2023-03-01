@@ -72,15 +72,15 @@ function Fitur() {
       <div>
         <Keunggulan
           title="PENGENDALIAN HAMA TERPADU"
-          content="Produk kami dapat menarik serangga agar datang dan terperangkap menggunakan teknologi ramah lingkungan untuk mengendalikan hama. Pengendalian Hama Terpadu (PHT)
+          content="Sistem pengendalian hama terpadu(PHT) dapat mengendalikan serangga menggunakan teknologi ramah lingkungan sehingga tidak merusak ekosistem. Pengendalian Hama Terpadu (PHT)
           dapat menjadi solusi untuk mengurangi
-          dampaknya dan menjaga hasil produksi
-          yang optimal."
+          dampak negatif dari hama dan menjaga hasil produksi
+          tetap optimal."
           image={img1A}
         />
         <Keunggulan
-          title="RAMAH LINGKUNGAN DENGAN ENERGI TERBARUKAN"
-          content="Tecnogreen mengedepankan produk dan sistem pertanian yang berbasis energi terbarukan dan ramah lingkungan. Pertanian yang ramah lingkungan dan
+          title="RAMAH LINGKUNGAN DENGAN ENERGI MATAHARI"
+          content="Tecnogreen mengedepankan produk dan sistem pertanian yang ramah lingkungan. Pertanian yang ramah lingkungan dan
           berkelanjutan menjadi kunci utama
           dalam mitigasi perubahan iklim."
           image={img2A}
@@ -88,14 +88,12 @@ function Fitur() {
         />
         <Keunggulan
           title="PEMANFAATAN TEKNOLOGI TERKINI"
-          content="Produk kami dibekali dengan teknologi internet of things(IoT) sehingga dapat memonitor keadaan sekitar alat dan memberikan informasi yang dapat diakses melalui website dashboard."
+          content="Kami mengembangkan sistem yang dapat dipadukan dengan teknologi internet of things(IoT) sehingga nantinya dapat memonitor keadaan lingkungan dan memberikan informasi secara real time melalui dashboard."
           image={img3A}
         />
         <Keunggulan
-          title="KOKOH, AWET, DAPAT DIANDALKAN"
-          content="Struktur produk kami disusun dengan material berkualitas dan
-            tentunya awet dan tahan di berbagai jenis lahan kawasan pertanian
-            seperti persawahan, kws. holtikultura, dan area kebun."
+          title="SISTEM YANG DAPAT DIANDALKAN"
+          content="Tecnogreen mengembangkan sistem dengan mengedepankan kualitas serta efisiensi pengendalian terhadap hama perkebunan. Hal ini dilakukan agar sistem PHT kami andal dan tetap mengedepankan prinsip teknologi hijau"
           image={img4A}
           flex_reverse={true}
         />
@@ -137,7 +135,7 @@ function Fitur() {
 
         <img alt="ilustrasi alat" src={img5A} className="w-1/2 self-center" />
       </div>
-
+      
       <div className="hidden">
         <p className="font-cabin text-center text-sm px-36 py-10">
           Perangkap hama Tecnogreen dapat menampilkan data beberapa parameter
