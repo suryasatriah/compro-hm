@@ -38,6 +38,8 @@ function Keunggulan(props) {
 
   if (flex_reverse === true) {
     flex_reverse = "flex-row-reverse";
+  } else {
+    flex_reverse = "flex-row";
   }
 
   return (
@@ -51,10 +53,10 @@ function Keunggulan(props) {
         className="bg-fitur1 w-2/5 p-32 font-cabin text-left 
       sm:max-md:text-center sm:max-md:py-10 sm:max-md:px-auto sm:max-md:w-auto"
       >
-        <h1 className="font-bold align-middle text-base pb-5 sm:max-md:pb-5">
+        <h1 className="font-bold align-middle text-lg pb-5 sm:max-md:pb-5">
           {title}
         </h1>
-        <p className="align-middle text-xs">{content}</p>
+        <p className="align-middle text-sm pb-0 overflow-hidden">{content}</p>
       </div>
     </div>
   );
@@ -65,18 +67,19 @@ function Fitur() {
   return (
     <main className="container max-w-screen-2xl mx-auto flex flex-col">
       <div className="font-cabin font-semibold text-center p-20 bg-green-50">
-        <h2 className="text-lg pb-1">HOW IT WORKS</h2>
-        <h1 className="text-2xl">Perlindungan untuk tanaman kebun anda!</h1>
+        <h2 className="text-2xl pb-1">TECNOGREEN.ID</h2>
+        <h1 className="text-3xl">Perlindungan untuk tanaman kebun anda!</h1>
       </div>
 
       <div>
         <Keunggulan
           title="PENGENDALIAN HAMA TERPADU"
-          content="Sistem pengendalian hama terpadu(PHT) dapat mengendalikan serangga menggunakan teknologi ramah lingkungan sehingga tidak merusak ekosistem. Pengendalian Hama Terpadu (PHT)
+          content="Sistem pengendalian hama terpadu(PHT) dapat mengendalikan serangga dengan teknologi ramah lingkungan sehingga
           dapat menjadi solusi untuk mengurangi
           dampak negatif dari hama dan menjaga hasil produksi
           tetap optimal."
           image={img1A}
+          flex_reverse={false}
         />
         <Keunggulan
           title="RAMAH LINGKUNGAN DENGAN ENERGI MATAHARI"
@@ -93,7 +96,7 @@ function Fitur() {
         />
         <Keunggulan
           title="SISTEM YANG DAPAT DIANDALKAN"
-          content="Tecnogreen mengembangkan sistem dengan mengedepankan kualitas serta efisiensi pengendalian terhadap hama perkebunan. Hal ini dilakukan agar sistem PHT kami andal dan tetap mengedepankan prinsip teknologi hijau"
+          content="Tecnogreen mengembangkan sistem dengan mengedepankan kualitas serta efisiensi pengendalian terhadap hama perkebunan agar sistem PHT kami andal dan tetap mengedepankan prinsip teknologi hijau."
           image={img4A}
           flex_reverse={true}
         />
@@ -135,7 +138,7 @@ function Fitur() {
 
         <img alt="ilustrasi alat" src={img5A} className="w-1/2 self-center" />
       </div>
-      
+
       <div className="hidden">
         <p className="font-cabin text-center text-sm px-36 py-10">
           Perangkap hama Tecnogreen dapat menampilkan data beberapa parameter

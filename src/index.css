@@ -2,16 +2,74 @@
 @tailwind components;
 @tailwind utilities;
 
-footer {
-  background-color: rgb(20 100 50);
-  color: rgb(255, 255, 255);
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: "Inter", sans-serif;
 }
+
+.font-cabin {
+  font-family: "Inter", sans-serif;
+}
+
+nav,
+.nav {
+  top: 0;
+  z-index: 1;
+  position: -webkit-sticky;
+  position: sticky;
+  background: white;
+}
+
+main {
+  max-width: 1536px;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 nav {
   display: flex;
   flex-direction: row;
   place-items: center;
   padding-top: 8px;
   padding-bottom: 8px;
+}
+
+.parallax {
+  background-image: url("./images/hero.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+footer {
+  background: rgb(20 100 50);
+  color: white;
+  max-width: 1536px;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.compro {
+  width: 500px;
+  height: 200px;
+  background: cadetblue;
+  border-radius: 35px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+}
+
+.compro:hover,
+.compro:hover > * {
+  transform: scale(1.1);
 }
 
 ul {
@@ -26,16 +84,19 @@ button:hover {
   color: white;
 }
 
-.font-cabin {
-  font-family: "Inter", sans-serif;
-}
-
 .dot {
   height: 120px;
   width: 120px;
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
+}
+
+.dot2 {
+  height: 120px;
+  width: 120px;
+  background-color: #bbb;
+  border-radius: 50%;
 }
 
 .bg-fitur1 {

@@ -5,19 +5,19 @@ import Kontak from "./partials/kontak";
 import Fitur from "./partials/FiturAlat";
 import logo from "./images/logo.png";
 import Map from "./partials/map";
-import SpesifikasiProduk from "./partials/SpesifikasiProduk";
 import TentangKami from "./partials/TentangKami";
+import SocialMediaFooter from "./partials/SocialMedia";
 
 function App() {
   const sectionRefTentang = useRef(null);
-  const sectionRefProduk = useRef(null);
+  const sectionRefSistem = useRef(null);
   const sectionRefKontak = useRef(null);
 
   const handleScrollTentang = () => {
     sectionRefTentang.current.scrollIntoView({ behavior: "smooth" });
   };
   const handleScrollProduk = () => {
-    sectionRefProduk.current.scrollIntoView({ behavior: "smooth" });
+    sectionRefSistem.current.scrollIntoView({ behavior: "smooth" });
   };
   const handleScrollKontak = () => {
     sectionRefKontak.current.scrollIntoView({ behavior: "smooth" });
@@ -25,12 +25,12 @@ function App() {
 
   return (
     <main>
-      <nav className="container max-w-screen-2xl mx-auto">
+      <nav className="sm:max-md:nav">
         <img className="max-h-16 px-10" alt="logo" src={logo} />
         <ul className="sm:max-md:hidden">
-          <li className="space-x-5">
+          <li className="space-x-5 nav">
             <button onClick={handleScrollTentang}>Tentang</button>
-            <button onClick={handleScrollProduk}>Produk</button>
+            <button onClick={handleScrollProduk}>Sistem Kami</button>
             <button onClick={handleScrollKontak}>Kontak</button>
           </li>
         </ul>
@@ -38,11 +38,11 @@ function App() {
       <body>
         <HeroContainer />
         <SectionTentang ref={sectionRefTentang} />
-        <SectionProduk ref={sectionRefProduk} />
-        <SpesifikasiProduk/>
+        <SectionProduk ref={sectionRefSistem} />
         <SectionKontak ref={sectionRefKontak} />
       </body>
-      <footer className="container mx-auto max-w-screen-2xl">
+      
+      <footer className="container"> 
         <div className=" flex flex-row sm:max-md:flex-col">
           <div className="w-1/4 pl-10 pr-5 pt-10 pb-5 sm:max-md:w-auto">
             <h1 className="font-bold pb-5">ALAMAT</h1>
@@ -68,10 +68,16 @@ function App() {
             </p>
           </div>
 
-          <div className="w-2/4 pl-10 pr-5 pt-10 pb-5 sm:max-md:w-auto">
+          <div className="w-1/4 pl-10 pr-5 pt-10 pb-5 sm:max-md:w-auto">
+            <h1 className="font-bold pb-5">SOSIAL MEDIA</h1>
+            <SocialMediaFooter />
+          </div>
+
+          <div className="w-1/4 pr-10 pt-10 pb-5 sm:max-md:w-auto">
             <h1 className="font-bold pb-5">LOKASI</h1>
             <Map />
           </div>
+
         </div>
 
         <div className="font-cabin text-white text-center pt-20 pb-10">
@@ -80,6 +86,7 @@ function App() {
           </p>
         </div>
       </footer>
+
     </main>
   );
 }
