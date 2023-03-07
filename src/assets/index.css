@@ -1,0 +1,133 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*typography*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: "Inter", sans-serif;
+}
+
+.font-cabin {
+  font-family: "Inter", sans-serif;
+}
+
+main {
+  max-width: 1536px;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.white-space{
+  background: cyan;
+  width: 100%;
+  height: 350px;
+}
+
+/*navigation bar*/
+
+nav,
+.nav {
+  top: 0;
+  z-index: 1;
+  position: -webkit-sticky;
+  position: sticky;
+  background: white;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  place-items: center;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+/*hero container*/
+
+.parallax {
+  background-image: url("./images/hero.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*button compro*/
+
+.btn-compro {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background-color: rgba(85, 195, 110, 1);
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 20px 35px;
+  border: 50%;
+  cursor: pointer;
+  border-radius: 35px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+}
+
+.btn-compro:hover{
+  background: black;
+}
+
+/*konten*/
+
+.bg-konten {
+  background: radial-gradient(
+    50% 60% at 50% 50%,
+    rgba(75, 180, 101, 0.75) 0%,
+    rgba(255, 255, 255, 0.5) 100%
+  );
+}
+
+/*kontak*/
+.heading-kontak{
+  position: absolute;
+  top: 30%;
+  left: 70%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color: white;
+  font-weight: bold;
+}
+.btn-whatsapp{
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background-color: rgba(85, 195, 110, 1);
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 20px 35px;
+  border: 1px;
+  cursor: pointer;
+  border-radius: 35px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+}
+
+/*footer*/
+footer {
+  background: rgb(20 100 50);
+  color: white;
+  max-width: 1536px;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+}

@@ -1,12 +1,11 @@
-import React from "react";
-import { useRef } from "react";
-import HeroContainer from "./partials/HeroContainer";
-import Kontak from "./partials/kontak";
-import Fitur from "./partials/FiturAlat";
-import logo from "./images/logo.png";
-import Map from "./partials/map";
-import TentangKami from "./partials/TentangKami";
-import SocialMediaFooter from "./partials/SocialMedia";
+import React, { useRef } from "react";
+import logo from "./assets/images/logo.png";
+import HeroContainer from "./components/heroContainer";
+import Kontak from "./components/kontak";
+import SectionKonten from "./components/sectionKonten";
+import Map from "./components/map";
+import SocialMediaFooter from "./components/socialMedia";
+import TentangKami from "./components/tentangKami";
 
 function App() {
   const sectionRefTentang = useRef(null);
@@ -42,8 +41,9 @@ function App() {
         <SectionKontak ref={sectionRefKontak} />
       </body>
       
-      <footer className="container"> 
+      <footer> 
         <div className=" flex flex-row sm:max-md:flex-col">
+
           <div className="w-1/4 pl-10 pr-5 pt-10 pb-5 sm:max-md:w-auto">
             <h1 className="font-bold pb-5">ALAMAT</h1>
             <p>
@@ -73,7 +73,7 @@ function App() {
             <SocialMediaFooter />
           </div>
 
-          <div className="w-1/4 pr-10 pt-10 pb-5 sm:max-md:w-auto">
+          <div className="w-1/4 pr-10 pt-10 pb-5 sm:max-md:w-auto sm:max-md:pl-10">
             <h1 className="font-bold pb-5">LOKASI</h1>
             <Map />
           </div>
@@ -82,7 +82,7 @@ function App() {
 
         <div className="font-cabin text-white text-center pt-20 pb-10">
           <p className="text-[12px]">
-            PT.HALIM MAKMUR JAYAABADI&copy;2023 ALL RIGHT RESERVED
+            PT. HALIM MAKMUR JAYAABADI&copy;2023 ALL RIGHT RESERVED
           </p>
         </div>
       </footer>
@@ -98,7 +98,7 @@ const SectionTentang = React.forwardRef((props, ref) => (
 ));
 const SectionProduk = React.forwardRef((props, ref) => (
   <section ref={ref}>
-    <Fitur />
+    <SectionKonten />
   </section>
 ));
 const SectionKontak = React.forwardRef((props, ref) => (
